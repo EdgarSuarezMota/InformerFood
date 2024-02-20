@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E6E6E6">
+
+            <TextView
+                android:id="@+id/tv_details_food_labels_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/allerta"
+                android:text="Labels"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/d_4"
+                app:layout_constraintTop_toBottomOf="@+id/d_4" />
+
+            <TextView
+                android:id="@+id/tv_details_food_labels_labels"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="TextView"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/d_4"
+                app:layout_constraintStart_toStartOf="@+id/tv_details_food_labels_title"
+                app:layout_constraintTop_toBottomOf="@+id/tv_details_food_labels_title" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/d_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                app:dividerColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/rv_details_food_nutrients_nutrients"
+                app:layout_constraintStart_toStartOf="@+id/rv_details_food_nutrients_nutrients"
+                app:layout_constraintTop_toBottomOf="@+id/rv_details_food_nutrients_nutrients" />
+
+            <TextView
+                android:id="@+id/tv_details_food_nutrients_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/allerta"
+                android:text="Nutrients"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/d_3"
+                app:layout_constraintTop_toBottomOf="@+id/d_3" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_details_food_nutrients_nutrients"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/d_3"
+                app:layout_constraintStart_toStartOf="@+id/tv_details_food_nutrients_title"
+                app:layout_constraintTop_toBottomOf="@+id/tv_details_food_nutrients_title"
+                tools:listitem="@layout/item_food_nutrients" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/d_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                app:dividerColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/d_2"
+                app:layout_constraintStart_toStartOf="@+id/d_2"
+                app:layout_constraintTop_toBottomOf="@+id/tv_details_food_ingredients_ingredients" />
+
+            <TextView
+                android:id="@+id/tv_details_food_ingredients_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/allerta"
+                android:text="Ingredients"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/d_2"
+                app:layout_constraintTop_toBottomOf="@+id/d_2" />
+
+            <TextView
+                android:id="@+id/tv_details_food_ingredients_ingredients"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="TextView"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/d_2"
+                app:layout_constraintStart_toStartOf="@+id/tv_details_food_ingredients_title"
+                app:layout_constraintTop_toBottomOf="@+id/tv_details_food_ingredients_title" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/d_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                app:dividerColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/d_1"
+                app:layout_constraintStart_toStartOf="@+id/d_1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_details_food_categories_categories" />
+
+            <TextView
+                android:id="@+id/tv_details_food_categories_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/allerta"
+                android:text="Categories"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/d_1" />
+
+            <TextView
+                android:id="@+id/tv_details_food_categories_categories"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="TextView"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/d_1"
+                app:layout_constraintStart_toStartOf="@+id/tv_details_food_categories_title"
+                app:layout_constraintTop_toBottomOf="@+id/tv_details_food_categories_title" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/d_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="24dp"
+                app:dividerColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/tv_details_food_product_code"
+                app:layout_constraintStart_toStartOf="@+id/iv_details_food_product_image"
+                app:layout_constraintTop_toBottomOf="@+id/tv_details_food_product_code" />
+
+            <ImageView
+                android:id="@+id/iv_details_food_product_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/descarga"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_food_app_bar" />
+
+            <TextView
+                android:id="@+id/tv_details_food_product_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/allerta"
+                android:gravity="bottom"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_details_food_product_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/iv_details_food_product_image"
+                app:layout_constraintTop_toTopOf="@+id/iv_details_food_product_image" />
+
+            <TextView
+                android:id="@+id/tv_details_food_product_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/allerta"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_details_food_product_name"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/tv_details_food_product_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_details_food_product_name" />
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/cpi_api"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="200dp"
+                android:indeterminate="true"
+                android:visibility="visible"
+                app:indicatorColor="#FF0000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/d_1" />
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/details_food_app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E6E6E6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/details_food_top_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="?attr/actionBarSize"
+                    app:navigationIcon="@drawable/ic_close"
+                    app:navigationIconTint="#000000" />
+
+            </com.google.android.material.appbar.AppBarLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
