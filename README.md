@@ -22,21 +22,9 @@ Para ejecutar esta aplicación, necesitarás tener instalado lo siguiente:
 
 Para garantizar el correcto funcionamiento de la aplicación, se requieren los siguientes permisos en tu dispositivo Android:
 
-- **Acceso a Estado de la Red (`android.permission.ACCESS_NETWORK_STATE`):**
-  - Este permiso permite a la aplicación verificar si hay una conexión de red disponible en el dispositivo.
-  - Es necesario para determinar si el dispositivo está conectado a Internet y así poder obtener los datos meteorológicos en tiempo real.
-
 - **Acceso a Internet (`android.permission.INTERNET`):**
   - Este permiso permite que la aplicación acceda a la red para realizar solicitudes de red y obtener datos de servicios en línea.
   - Es esencial para que la aplicación pueda descargar y mostrar los datos meteorológicos actualizados desde un servidor remoto.
-
-- **Acceso a Ubicación Exacta (`android.permission.ACCESS_FINE_LOCATION`):**
-  - Este permiso permite que la aplicación acceda a la ubicación precisa del dispositivo utilizando GPS u otras tecnologías de localización.
-  - Se utiliza para proporcionar pronósticos meteorológicos específicos para la ubicación exacta del usuario.
-
-- **Acceso a Ubicación Aproximada (`android.permission.ACCESS_COARSE_LOCATION`):**
-  - Este permiso permite que la aplicación acceda a la ubicación aproximada del dispositivo utilizando métodos menos precisos, como la triangulación de torres de telefonía móvil.
-  - Se utiliza para mejorar la precisión de los pronósticos meteorológicos al obtener una ubicación más general del usuario en caso de que el acceso a la ubicación exacta no esté disponible o sea impreciso.
 
 Asegúrate de otorgar estos permisos a la aplicación cuando se te solicite. Puedes administrar los permisos en la configuración de la aplicación en tu dispositivo.
 
@@ -55,7 +43,6 @@ Asegúrate de otorgar estos permisos a la aplicación cuando se te solicite. Pue
 ## Tecnologías Utilizadas
 - **Java:** Utilizado para la programación del backend de la aplicación.
 - **Retrofit:** Biblioteca de cliente HTTP para Java y Android, utilizada para realizar solicitudes de red de forma sencilla y eficiente.
-- **Play Services Location:** Servicio de Google Play utilizado para acceder a la ubicación del dispositivo en aplicaciones de Android.
 
 ## Autor
 Edgar Suárez Mota - edgarsuarez2004@gmail.com
