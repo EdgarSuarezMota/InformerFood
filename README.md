@@ -8,7 +8,7 @@ FoodScanner es una aplicación que te permite escanear alimentos y obtener infor
 - **Detalles Nutricionales:** Accede a información detallada sobre las calorías, grasas, proteínas, carbohidratos y otros nutrientes presentes en el alimento.
 - **Ingredientes y Alergenos:** Descubre los ingredientes utilizados en el producto y la presencia de alérgenos comunes.
 - **Interfaz Intuitiva:** Diseño limpio y fácil de navegar para una experiencia de usuario fluida.
-- **Búsqueda Rápida:** Encuentra rápidamente información sobre tus alimentos favoritos utilizando la función de búsqueda integrada.
+- **Guardado de Alimentos:** Guarda tus alimentos favoritos dentro de la aplicación para acceder fácilmente a ellos en el futuro y llevar un registro de tu dieta.
 
 ## Requerimientos
 
@@ -34,8 +34,8 @@ Asegúrate de otorgar este permiso a la aplicación cuando se te solicite. Puede
 
 ## Uso
 1. Abre la aplicación.
-2. Selecciona la opción de escaneo o ingresa el nombre del alimento.
-3. Apunta la cámara hacia el código de barras del producto o ingresa el nombre del alimento manualmente.
+2. Selecciona la opción de escaneo.
+3. Apunta la cámara hacia el código de barras del producto.
 4. Obtén información detallada sobre el producto escaneado y toma decisiones informadas sobre tu alimentación.
 
 ## Tecnologías Utilizadas
@@ -44,4 +44,4 @@ Asegúrate de otorgar este permiso a la aplicación cuando se te solicite. Puede
 - **API de Nutrición:** Utilizada para obtener información nutricional de alimentos.
 
 ## Autor
-Tu Nombre - tu@email.com
+Edgar Suárez Mota - edgarsuarez2004@gmail.com
