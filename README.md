@@ -28,9 +28,9 @@ Para garantizar el correcto funcionamiento de la aplicación, se requieren los s
 Asegúrate de otorgar este permiso a la aplicación cuando se te solicite. Puedes administrar los permisos en la configuración de la aplicación en tu dispositivo.
 
 ## Capturas de Pantalla
-![Inicio](https://example.com/foodscanner/screenshots/home.png)
-![Escaneo](https://example.com/foodscanner/screenshots/scan.png)
-![Detalle del Producto](https://example.com/foodscanner/screenshots/product_detail.png)
+![Inicio](https://github.com/EdgarSuarezMota/InformerFood/blob/master/Imagen4.png)
+![Escaneo](https://github.com/EdgarSuarezMota/InformerFood/blob/master/Imagen5.png)
+![Detalle del Producto](https://github.com/EdgarSuarezMota/InformerFood/blob/master/Imagen6.png)
 
 ## Uso
 1. Abre la aplicación.
